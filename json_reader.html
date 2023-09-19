@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Information</title>
+    <style>
+        .dog-block {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .dog-label {
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dogs Information</h1>
+    <div id="jsonOutput"></div>
+
+    <script>
+        const jsonFilePath = './dogs.json';
+
+        fetch(jsonFilePath)
+            .then(response => response.json())
+            .then(jsonData => {
+                const jsonOutput = document.getElementById("jsonOutput");
+                
+                for (const key in jsonData) {
+                    if (jsonData.hasOwnProperty(key)) {
+                        const dogData = jsonData[key];
+                        const dogBlock = document.createElement("div");
+                        dogBlock.className = "dog-block";
+
+                        const breedLabel = document.createElement("p");
+                        breedLabel.className = "dog-label";
+                        breedLabel.textContent = "Breed: " + dogData.Breed;
+                        dogBlock.appendChild(breedLabel);
+
+                        const colorLabel = document.createElement("p");
+                        colorLabel.className = "dog-label";
+                        colorLabel.textContent = "Color: " + dogData.Color;
+                        dogBlock.appendChild(colorLabel);
+
+                        const countryLabel = document.createElement("p");
+                        countryLabel.className = "dog-label";
+                        countryLabel.textContent = "Country: " + dogData.Country;
+                        dogBlock.appendChild(countryLabel);
+
+                        jsonOutput.appendChild(dogBlock);
+                    }
+                }
+            })
+            .catch(error => {
+                console.error("Error loading JSON:", error);
+                alert("Error loading JSON. Please check the file path.");
+            });
+    </script>
+</body>
+</html>

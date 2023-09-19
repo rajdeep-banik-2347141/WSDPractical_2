@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Dog Images from API</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #fetchButton {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #dogImageContainer {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ff0000;
+        border-radius: 10px;
+      }
+
+      #dogImage {
+        width: 300px;
+        height: 300px;
+      }
+      ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+          li.navitem {
+            float: left;
+          }
+          li.navitem a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          li.navitem a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li class="navitem">
+        <a href="#">Wagging Tails</a>
+      </li>
+      <li class="navitem">
+        <a href="#">Home</a>
+      </li>
+      <li class="navitem">
+        <a href="#">Feedback</a>
+      </li>
+      <li class="navitem">
+        <a href="#">Canine Catalog</a>
+      </li>
+    </ul>
+    <h1>Random Dog Images</h1>
+
+    <button id="fetchButton">Fetch Random Dog Image</button>
+    <div id="dogImageContainer"></div>
+
+    <script>
+      const fetchButton = document.getElementById("fetchButton");
+      const dogImageContainer = document.getElementById("dogImageContainer");
+
+      fetchButton.addEventListener("click", fetchRandomDogImage);
+
+      function fetchRandomDogImage() {
+        fetch("https://dog.ceo/api/breeds/image/random")
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              const imageUrl = data.message;
+              const dogImage = document.createElement("img");
+              dogImage.src = imageUrl;
+              dogImage.alt = "Random Dog";
+              dogImageContainer.innerHTML = "";
+              dogImageContainer.appendChild(dogImage);
+            } else {
+              console.error("Failed to fetch a random dog image");
+            }
+          })
+
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

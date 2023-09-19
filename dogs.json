@@ -1,0 +1,153 @@
+{
+    "1": {
+      "Breed": "Golden Retriever",
+      "Color": "Golden",
+      "Country": "United States"
+    },
+    "2": {
+      "Breed": "German Shepherd",
+      "Color": "Black and Tan",
+      "Country": "Germany"
+    },
+    "3": {
+      "Breed": "Poodle",
+      "Color": "White",
+      "Country": "France"
+    },
+    "4": {
+      "Breed": "Bulldog",
+      "Color": "Brindle",
+      "Country": "United Kingdom"
+    },
+    "5": {
+      "Breed": "Labrador Retriever",
+      "Color": "Yellow",
+      "Country": "Canada"
+    },
+    "6": {
+      "Breed": "Boxer",
+      "Color": "Fawn",
+      "Country": "Germany"
+    },
+    "7": {
+      "Breed": "Beagle",
+      "Color": "Tri-color",
+      "Country": "United Kingdom"
+    },
+    "8": {
+      "Breed": "Dachshund",
+      "Color": "Red",
+      "Country": "Germany"
+    },
+    "9": {
+      "Breed": "Doberman Pinscher",
+      "Color": "Black and Tan",
+      "Country": "Germany"
+    },
+    "10": {
+      "Breed": "Rottweiler",
+      "Color": "Black and Tan",
+      "Country": "Germany"
+    },
+    "11": {
+      "Breed": "Siberian Husky",
+      "Color": "Black and White",
+      "Country": "Russia"
+    },
+    "12": {
+      "Breed": "Shih Tzu",
+      "Color": "Various",
+      "Country": "Tibet"
+    },
+    "13": {
+      "Breed": "Yorkshire Terrier",
+      "Color": "Blue and Tan",
+      "Country": "United Kingdom"
+    },
+    "14": {
+      "Breed": "Chihuahua",
+      "Color": "Various",
+      "Country": "Mexico"
+    },
+    "15": {
+      "Breed": "Pomeranian",
+      "Color": "Various",
+      "Country": "Germany"
+    },
+    "16": {
+      "Breed": "Boston Terrier",
+      "Color": "Tuxedo",
+      "Country": "United States"
+    },
+    "17": {
+      "Breed": "Great Dane",
+      "Color": "Various",
+      "Country": "Germany"
+    },
+    "18": {
+      "Breed": "Cocker Spaniel",
+      "Color": "Various",
+      "Country": "United States"
+    },
+    "19": {
+      "Breed": "Pug",
+      "Color": "Fawn",
+      "Country": "China"
+    },
+    "20": {
+      "Breed": "Shiba Inu",
+      "Color": "Red",
+      "Country": "Japan"
+    },
+    "21": {
+      "Breed": "Basset Hound",
+      "Color": "Tricolor",
+      "Country": "France"
+    },
+    "22": {
+      "Breed": "Bernese Mountain Dog",
+      "Color": "Black, White, and Rust",
+      "Country": "Switzerland"
+    },
+    "23": {
+      "Breed": "Rhodesian Ridgeback",
+      "Color": "Wheaten",
+      "Country": "Zimbabwe"
+    },
+    "24": {
+      "Breed": "Irish Setter",
+      "Color": "Mahogany",
+      "Country": "Ireland"
+    },
+    "25": {
+      "Breed": "Shetland Sheepdog",
+      "Color": "Various",
+      "Country": "United Kingdom"
+    },
+    "26": {
+      "Breed": "Miniature Schnauzer",
+      "Color": "Salt and Pepper",
+      "Country": "Germany"
+    },
+    "27": {
+      "Breed": "Alaskan Malamute",
+      "Color": "Various",
+      "Country": "United States"
+    },
+    "28": {
+      "Breed": "Collie",
+      "Color": "Sable and White",
+      "Country": "United Kingdom"
+    },
+    "29": {
+      "Breed": "Papillon",
+      "Color": "Various",
+      "Country": "France"
+    },
+    "30": {
+      "Breed": "West Highland White Terrier",
+      "Color": "White",
+      "Country": "United Kingdom"
+    }
+  }
+  

@@ -1,0 +1,42 @@
+<CanineDetails>
+    <Dog>
+        <Breed>Golden Retriever</Breed>
+        <Color>Golden</Color>
+        <Country>United States</Country>
+    </Dog>
+    <Dog>
+        <Breed>German Shepherd</Breed>
+        <Color>Black and Tan</Color>
+        <Country>Germany</Country>
+    </Dog>
+    <Dog>
+        <Breed>Poodle</Breed>
+        <Color>White</Color>
+        <Country>France</Country>
+    </Dog>
+    <Dog>
+        <Breed>Bulldog</Breed>
+        <Color>Brindle</Color>
+        <Country>United Kingdom</Country>
+    </Dog>
+    <Dog>
+        <Breed>Labrador Retriever</Breed>
+        <Color>Yellow</Color>
+        <Country>Canada</Country>
+    </Dog>
+    <Dog>
+        <Breed>Boxer</Breed>
+        <Color>Fawn</Color>
+        <Country>Germany</Country>
+    </Dog>
+    <Dog>
+        <Breed>Beagle</Breed>
+        <Color>Tri-Color</Color>
+        <Country>United Kingdom</Country>
+    </Dog>
+    <Dog>
+        <Breed>Dachshund</Breed>
+        <Color>Red</Color>
+        <Country>Germany</Country>
+    </Dog>
+</CanineDetails>

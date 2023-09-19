@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body,
+      h1,
+      form {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        font-family: "Barlow Condensed", sans-serif;
+      }
+
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #registration-form {
+        font-family: "Barlow Condensed", sans-serif;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: 600;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      button[type="submit"] {
+        color: white;
+        background-color: blue;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Wagging Tales</a>
+      <a href="#">Home</a>
+      <a href="#">Feedback</a>
+      <a href="#">Canine Catalog</a>
+    </div>
+
+    <div class="container">
+      <h1 class="head">Leave a Comment</h1>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="full-name">Name:</label><br />
+          <input type="text" id="full-name" name="full-name" required />
+          <span class="error-message" id="full-name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required />
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label><br />
+          <input type="text" id="comment" name="comment" required />
+          <span class="error-message" id="comment-error"></span>
+        </div>
+        <div class="btn">
+          <button
+            type="submit"
+            style="color: white; background-color: blue"
+            id="submit-button"
+            onclick="success()"
+            disabled
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
